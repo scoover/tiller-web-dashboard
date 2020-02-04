@@ -64,9 +64,10 @@ function doGet(e) {
   var sheet = spreadsheet.getSheetByName(sheetNameWebDashboard);
   // get the contents of the dashboard definition sheet
   var values = sheet.getDataRange().getValues();
-  
-  var cells = '';
+  // parse contents of dashboard definition sheet
   var metricsInfo = extractMetrics();
+
+  var cells = '';
   var colIndexHeaders = metricsInfo.columns;
   var metrics = metricsInfo.metrics;
   var html = null;
