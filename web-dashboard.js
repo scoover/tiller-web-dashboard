@@ -58,9 +58,13 @@ function getTemplateFromUrl(url) {
 
 // doGet(): this function executes whenever the web app url called
 function doGet(e) {
+  // load the linked spreadsheet object
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
-  var sheet = spreadsheet.getSheetByName('Web Dashboard');
+  // load the dashboard definition sheet
+  var sheet = spreadsheet.getSheetByName(sheetNameWebDashboard);
+  // get the contents of the dashboard definition sheet
   var values = sheet.getDataRange().getValues();
+  
   var cells = '';
   var metricsInfo = extractMetrics();
   var colIndexHeaders = metricsInfo.columns;
