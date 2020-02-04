@@ -62,6 +62,16 @@ function doGet(e) {
   var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   // load the dashboard definition sheet
   var sheet = spreadsheet.getSheetByName(sheetNameWebDashboard);
+
+  // if the dashboard definition sheet is not found...
+  if(!sheet) {
+    return showErrorHtml(
+        'Definition Sheet Not Found',
+        '<p>Dashboard metrics are defined via a sheet named <b>' + sheetNameWebDashboard + '</b>. \
+        The spreadsheet hosting this web app does not include a sheet named <b>' + sheetNameWebDashboard + '</b>.</p>'
+      );
+  }
+
   // get the contents of the dashboard definition sheet
   var values = sheet.getDataRange().getValues();
   // parse contents of dashboard definition sheet
@@ -196,4 +206,11 @@ function getColor(metric) {
 
   // return the requested color
   return colors[metric[webMetricColor]];
+}
+
+function showErrorHtml(title, message) {
+  var errroHtml = HtmlService.createTemplateFromFile('error');
+  errroHtml.title = title;
+  errroHtml.message = message;
+  return errroHtml.evaluate();
 }

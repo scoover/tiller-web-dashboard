@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Web Dashboard Error</title>
+    <link href="https://fonts.googleapis.com/css?family=Francois+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+      body {
+        font-family: 'Francois One', sans-serif;
+        padding: 30px;
+        background-color: #fffeec;
+      }
+      h1 {
+        margin: 25px auto 60px;
+        text-align: center;
+        line-height: 1.05;
+        font-size: 50px;
+      }
+      .message-container {
+        margin: 0 auto;
+        background-color: #ffea00;
+        border-radius: 10px;
+        padding: 20px;
+        width: 60%;
+        text-align: center;
+      }
+      .message {
+        font-size: 45px;
+        line-height: 1.25;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="header">
+      <span style="font-size: 25px; font-weight: 100;">Tiller Web Dashboard</span><br>
+      <?!= title ?>
+    </h1>
+    <div class="message-container">
+      <p class="message"><?!= message ?></p>
+    </div>
+  </body>
+</html>
