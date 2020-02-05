@@ -5,7 +5,7 @@ The **tiller-web-dashboard** project leverages the ability to deploy Google-Apps
 
 [Learn more about Tiller Money](https://www.tillerhq.com/how-tiller-works/).
 
-## Adivsory
+## Warning
 *This project is designed for intermediate users and includes only lightweight error checking. We hope it meets your needs out of the box, but further tweaks may be required to get it working in your environment. As a one-off Tiller-Labs release, Tiller offers no warranties or support for this solution. Visit the [Tiller Community](https://community.tillerhq.com/) to solicit help and share your thoughts with our user community.*
 
 ## Set Up in Your Host Spreadsheet
