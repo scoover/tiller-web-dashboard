@@ -7,7 +7,7 @@ The **tiller-web-dashboard** project leverages the ability to deploy Google-Apps
 
 ## Warnings
 - This project is designed for intermediate users and includes only lightweight error checking. We hope it meets your needs out of the box, but further tweaks may be required to get it working in your environment. As a one-off Tiller-Labs release, Tiller offers no warranties or support for this solution. Visit the [Tiller Community](https://community.tillerhq.com/) to solicit help and share your thoughts with our user community.*
-- Before running the script, you will see a message from Google saying ["This app isn't verified."](https://support.google.com/cloud/answer/7454865). This is normal since you will have just created the script. Review the code and make sure you are comfortable with what it is doing— again this script is for intermediate & advanced users. You will need to click an authorization button from Google that says `Go to <your script name> (unsafe)` to run the script.
+- Before running the script, you will see a message from Google that says ["This app isn't verified."](https://support.google.com/cloud/answer/7454865) This is normal since you will have just created the script. Review the code and make sure you are comfortable with what it is doing— again this script is for intermediate & advanced users. You will need to click an authorization button from Google that says `Go to <your script name> (unsafe)` to run the script.
 
 ## Set Up in Your Host Spreadsheet
 
@@ -15,7 +15,7 @@ The **tiller-web-dashboard** project leverages the ability to deploy Google-Apps
 Follow the steps below to install the dashboard in your spreadsheet:
 1. Open the spreadsheet where you’d like to install the dashboard.
 2. Copy the URL from the browser tab.
-3. Open the [sample dashboard configuration sheet](https://docs.google.com/spreadsheets/d/1Tub5NMKUTU7Q6_SCtqITdsvd3yfgUb6_-CiGa6W_TGU/){:target="_blank"}.
+3. Open the <a href="https://docs.google.com/spreadsheets/d/1Tub5NMKUTU7Q6_SCtqITdsvd3yfgUb6_-CiGa6W_TGU/" target="_blank">sample dashboard configuration sheet</a>.
 4. On the `Web Dashboard` sheet tab (at bottom), click `Copy To / Existing spreadsheet`.
 5. At the bottom of the pane, below “Or paste a web address here:”, paste the URL of your spreadsheet.
 6. Return to your spreadsheet.
@@ -26,7 +26,7 @@ Follow the steps below to install the dashboard in your spreadsheet:
 1. If you don't already have the spreadsheet you want to work with open the spreadsheet where you’d like to install the dashboard.
 2. Select `Tools / Script editor` in the menu bar.
 3. Select all and delete the default contents of the `Code.gs` file.
-4. Paste in the latest [web-dashboard.js script in Github](https://raw.githubusercontent.com/scoover/tiller-web-dashboard/master/web-dashboard.js){:target="_blank"} into the `Code.gs` file. The filename for the script that hosts the code is not important. If you’d like, you can rename it `web-dashboard.gs` by clicking the triangle beside `Code.gs`.
+4. Paste in the latest <a href="https://raw.githubusercontent.com/scoover/tiller-web-dashboard/master/web-dashboard.js" target="_blank">web-dashboard.js script in Github</a> into the `Code.gs` file. The filename for the script that hosts the code is not important. If you’d like, you can rename it `web-dashboard.gs` by clicking the triangle beside `Code.gs`.
 5. Save the updated script. You will be prompted for a project name (i.e. for the container for all of the project files). Consider something like `Tiller Sheet Scripts`.
 6. Select `Publish / Deploy as web app…` in the menu bar.
 7. For `Project version`, leave the dropdown set to “New”.
@@ -38,6 +38,6 @@ Follow the steps below to install the dashboard in your spreadsheet:
 13. If you approve, click `Allow`.
 14. A pane will appear titled: `Deploy as web app`. It should say "This project is now deployed as a web app." Below this message, you will see your new web app URL. This is what you’ll use to request your dashboard. Copy the URL. Bookmark it.
 15. Paste the URL in a new browser tab and check if everything is working.
-16. Since you just created an new & unverified script, you will likely see a screen that says "This app isn't verified." If you have reviewed the code and are comfortable proceeding, click on Advanced link (in the lower right) then on `Go to <your script name> (unsafe)`.
+16. Since you just created a new & unverified script, you will likely see a warning screen from Google that says ["This app isn't verified."](https://support.google.com/cloud/answer/7454865) If you have reviewed the code and are comfortable proceeding, click on Advanced link (in the lower right) then on `Go to <your script name> (unsafe)`.
 
 Hopefully, you're off and running at this point! Have fun and good luck.
