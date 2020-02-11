@@ -15,7 +15,7 @@ The **tiller-web-dashboard** project leverages the ability to deploy Google-Apps
 Follow the steps below to install the dashboard in your spreadsheet:
 1. Open the spreadsheet where you’d like to install the dashboard.
 2. Copy the URL from the browser tab.
-3. Open the <a href="https://docs.google.com/spreadsheets/d/1Tub5NMKUTU7Q6_SCtqITdsvd3yfgUb6_-CiGa6W_TGU/" target="_blank">sample dashboard configuration sheet</a>.
+3. Open the [sample dashboard configuration sheet](https://docs.google.com/spreadsheets/d/1Tub5NMKUTU7Q6_SCtqITdsvd3yfgUb6_-CiGa6W_TGU/).
 4. On the `Web Dashboard` sheet tab (at bottom), click `Copy To / Existing spreadsheet`.
 5. At the bottom of the pane, below “Or paste a web address here:”, paste the URL of your spreadsheet.
 6. Return to your spreadsheet.
@@ -26,7 +26,7 @@ Follow the steps below to install the dashboard in your spreadsheet:
 1. If you don't already have the spreadsheet you want to work with open the spreadsheet where you’d like to install the dashboard.
 2. Select `Tools / Script editor` in the menu bar.
 3. Select all and delete the default contents of the `Code.gs` file.
-4. Paste in the latest <a href="https://raw.githubusercontent.com/scoover/tiller-web-dashboard/master/web-dashboard.js" target="_blank">web-dashboard.js script in Github</a> into the `Code.gs` file. The filename for the script that hosts the code is not important. If you’d like, you can rename it `web-dashboard.gs` by clicking the triangle beside `Code.gs`.
+4. Paste in the latest [web-dashboard.js script in Github](https://raw.githubusercontent.com/scoover/tiller-web-dashboard/master/web-dashboard.js) into the `Code.gs` file. The filename for the script that hosts the code is not important. If you’d like, you can rename it `web-dashboard.gs` by clicking the triangle beside `Code.gs`.
 5. Save the updated script. You will be prompted for a project name (i.e. for the container for all of the project files). Consider something like `Tiller Sheet Scripts`.
 6. Select `Publish / Deploy as web app…` in the menu bar.
 7. For `Project version`, leave the dropdown set to “New”.
