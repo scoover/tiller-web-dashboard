@@ -41,3 +41,8 @@ Follow the steps below to install the dashboard in your spreadsheet:
 16. Since you just created a new & unverified script, you will likely see a warning screen from Google that says ["This app isn't verified."](https://support.google.com/cloud/answer/7454865) If you have reviewed the code and are comfortable proceeding, click on Advanced link (in the lower right) then on `Go to <your script name> (unsafe)`.
 
 Hopefully, you're off and running at this point! Have fun and good luck.
+
+## FAQ
+
+### Do I need to add the `web-dashboard-template.html` file to my project?
+No. The default `web-dashboard-template.html` file is hosted by Tiller [here](https://storage.googleapis.com/assets.templates.tillermoney.com/tillerLabs/html/web-dashboard-template.html) and is referenced in the header of the source code. If you'd like to modify the way the dashboard renders, feel free to create and host your own version of the `web-dashboard-template.html` and update the source code to point to your personal template. (You will need to re-deploy the web app.)
