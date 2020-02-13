@@ -9,7 +9,7 @@ The **tiller-web-dashboard** project leverages the ability to deploy Google Apps
 
 The script contains two components:
 1. [Google Apps Script (GAS) script](https://github.com/scoover/tiller-web-dashboard/blob/master/web-dashboard.js) that will be embedded in your spreadsheet
-2. [Dashboard renderer] (https://storage.googleapis.com/assets.templates.tillermoney.com/tillerLabs/html/web-dashboard-template.html) hosted by Tiller
+2. [Dashboard renderer](https://storage.googleapis.com/assets.templates.tillermoney.com/tillerLabs/html/web-dashboard-template.html) hosted by Tiller
 
 The GAS script will be configured as a web app and will respond to calls to its endpoint by sending the contents of your spreadsheet's `Web Dashboard` sheet to the dashboard renderer. The dashboard will then leverage [Bootstrap](https://getbootstrap.com/), [JQuery](https://jquery.com/) and Javascript to render the data into a responsive, mobile-friendly dashboard.
 
@@ -58,7 +58,7 @@ Hopefully, you're off and running at this point! Have fun and good luck.
 No. The default `web-dashboard-template.html` file is hosted by Tiller [here](https://storage.googleapis.com/assets.templates.tillermoney.com/tillerLabs/html/web-dashboard-template.html) and is referenced in the header of the source code. If you'd like to modify the way the dashboard renders, feel free to create and host your own version of the `web-dashboard-template.html` and update the source code to point to your personal template. (You will need to re-deploy the web app.)
 
 ### Why does the link to the hosted `web-dashboard-template.html` seem to be broken?
-The Tiller-hosted [`web-dashboard-template.html`](https://storage.googleapis.com/assets.templates.tillermoney.com/tillerLabs/html/web-dashboard-template.html) dashboard requires data passed from the in-spreadsheet Google Apps Script (GAS) script. If the link above is clicked on directly, the javascript is trying to render without content from your spreadsheet; it will appear blank. If you click "View Page Source" in your browser, you will see content similar to the [dashboard renderer master in this repo](https://github.com/scoover/tiller-web-dashboard/blob/master/web-dashboard-template.html).
+The [Tiller-hosted](https://storage.googleapis.com/assets.templates.tillermoney.com/tillerLabs/html/web-dashboard-template.html) `web-dashboard-template.html` requires data passed from the in-spreadsheet Google Apps Script (GAS) script. If the link above is clicked on directly, the javascript is trying to render without content from your spreadsheet; it will appear blank. If you click "View Page Source" in your browser, you will see content similar to the [dashboard renderer master in this repo](https://github.com/scoover/tiller-web-dashboard/blob/master/web-dashboard-template.html).
 
 ### Do I need to copy `web-dashboard-template.html` into my spreadsheet?
 No. It is hosted by Tiller.
