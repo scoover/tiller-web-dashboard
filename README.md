@@ -33,11 +33,11 @@ Follow the steps below to install the dashboard in your spreadsheet:
 8. Learn more about [how to personalize your dashboard](https://community.tillerhq.com/t/mobile-friendly-on-the-go-dashboard-script/2548).
 
 ### Install the Script in Your Spreadsheet
-1. If you don't already have the spreadsheet you want to work with open the spreadsheet where you’d like to install the dashboard.
+1. Open the spreadsheet where you’d like to install the dashboard.
 2. Select `Tools / Script editor` in the menu bar.
 3. Select all and delete the default contents of the `Code.gs` file.
 4. Paste in the latest [web-dashboard.js script in Github](https://raw.githubusercontent.com/scoover/tiller-web-dashboard/master/web-dashboard.js) into the `Code.gs` file. The filename for the script that hosts the code is not important. If you’d like, you can rename it `web-dashboard.gs` by clicking the triangle beside `Code.gs`.
-5. Save the updated script. You will be prompted for a project name (i.e. for the container for all of the project files). Consider something like `Tiller Sheet Scripts`.
+5. Add a name for the script where it currently reads "untitled" up top. Consider something like `Tiller Sheet Scripts`.
 6. Select `Publish / Deploy as web app…` in the menu bar.
 7. For `Project version`, leave the dropdown set to “New”.
 8. For `Execute the app as`, leave the dropdown set to “Me”.
