@@ -34,21 +34,20 @@ Follow the steps below to install the dashboard in your spreadsheet:
 
 ### Install the Script in Your Spreadsheet
 1. Open the spreadsheet where you’d like to install the dashboard.
-2. Select `Tools / Script editor` in the menu bar.
+2. Select `Extensions / Apps Script` in the menu bar to open the editor.
 3. Select all and delete the default contents of the `Code.gs` file.
-4. Paste in the latest [web-dashboard.js script in Github](https://raw.githubusercontent.com/scoover/tiller-web-dashboard/master/web-dashboard.js) into the `Code.gs` file. The filename for the script that hosts the code is not important. If you’d like, you can rename it `web-dashboard.gs` by clicking the triangle beside `Code.gs`.
-5. Add a name for the script where it currently reads "untitled" up top. Consider something like `Tiller Sheet Scripts`.
-6. Select `Publish / Deploy as web app…` in the menu bar.
-7. For `Project version`, leave the dropdown set to “New”.
-8. For `Execute the app as`, leave the dropdown set to “Me”.
-9. For `Who has access to the app`, leave the dropdown set to “Only myself”.
-10. Click `Deploy`.
-11. An `Authorization Required` pane will appear. Click `Review Permissions` and authenticate. 
-12. You will be asked to grand the script the following permissions: "See, edit, create, and delete your spreadsheets in Google Drive" & "Connect to an external service"
-13. If you approve, click `Allow`.
-14. A pane will appear titled: `Deploy as web app`. It should say "This project is now deployed as a web app." Below this message, you will see your new web app URL. This is what you’ll use to request your dashboard. Copy the URL. Bookmark it.
-15. Paste the URL in a new browser tab and check if everything is working.
-16. Since you just created a new & unverified script, you will likely see a warning screen from Google that says ["This app isn't verified."](https://support.google.com/cloud/answer/7454865) If you have reviewed the code and are comfortable proceeding, click on Advanced link (in the lower right) then on `Go to <your script name> (unsafe)`.
+4. Paste in the latest [web-dashboard.js script in Github](https://raw.githubusercontent.com/scoover/tiller-web-dashboard/master/web-dashboard.js) into the `Code.gs` file. The filename for the script that hosts the code is not important. If you’d like, you can rename it `web-dashboard.gs` by hovering over the `Code.gs` filename in the Files sidebar and clicking the "Rename" option under the three dots.
+5. Add a name for the script where it currently reads "Untitled project" up top. Consider something like `Tiller Sheet Scripts`.
+6. Click the blue `Deploy` button in the menu bar, selecting "Manage deployments".
+7. Below the message "This project has not been deployed yet", click the "Create deployment" button.
+8. On the screen that says, "Please select a deployment type", click the gear in the upper left (next to "Select type") and choose `Web app`.
+9. For `Execute as`, leave the dropdown set to “Me”.
+10. For `Who has access to the app`, leave the dropdown set to “Only myself”.
+11. Click `Deploy`.
+12. On the screen that says "The Web App requires you to authorize access to your data.", click the `Authorize access` button.
+13. Authenticate using your Google credentials. Review and allow the two required scopes.
+14. Paste the URL in a new browser tab and check if everything is working.
+15. Since you just created a new & unverified script, you will likely see a warning screen from Google that says ["This app isn't verified."](https://support.google.com/cloud/answer/7454865) If you have reviewed the code and are comfortable proceeding, click on Advanced link (in the lower right) then on `Go to <your script name> (unsafe)`.
 
 Hopefully, you're off and running at this point! Have fun and good luck.
 
