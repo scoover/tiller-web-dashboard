@@ -46,7 +46,7 @@ Follow the steps below to install the dashboard in your spreadsheet:
 11. Click `Deploy`.
 12. On the screen that says "The Web App requires you to authorize access to your data.", click the `Authorize access` button.
 13. Authenticate using your Google credentials. Review and allow the two required scopes.
-14. Paste the URL in a new browser tab and check if everything is working.
+14. Copy the "Web app / URL". This is the URL you will use to access your dashboard. Paste it in a new browser tab and check if everything is working.
 15. Since you just created a new & unverified script, you will likely see a warning screen from Google that says ["This app isn't verified."](https://support.google.com/cloud/answer/7454865) If you have reviewed the code and are comfortable proceeding, click on Advanced link (in the lower right) then on `Go to <your script name> (unsafe)`.
 
 Hopefully, you're off and running at this point! Have fun and good luck.
@@ -61,3 +61,6 @@ The [Tiller-hosted](https://storage.googleapis.com/assets.templates.tillermoney.
 
 ### Do I need to copy `web-dashboard-template.html` into my spreadsheet?
 No. It is hosted by Tiller.
+
+### I made changes to the script locally but the old code is running?
+When you publish a web app in the Apps Script editor, it locks to the current version of your code. If you make changes to the scripts, you will need to republish the new web app so it will attach to the latest version. An alternative approach is to use the `Test deployments` functionality instead of the `New/manage deployment` functionality. Test deployments always use the latest version of the saved script.
